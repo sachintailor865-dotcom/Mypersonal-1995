@@ -4,7 +4,7 @@ from diffusers import StableDiffusionImg2ImgPipeline
 import torch
 from PIL import Image
 import io
-TOKEN = "YAHAN_APNA_TELEGRAM_TOKEN_PASTE_KARO"
+TOKEN = "8913238303:AAGzyRrVQCQopIQajWKPVIRd0jCgdEYyeQM"
 pipe = StableDiffusionImg2ImgPipeline.from_pretrained(
     "Lykon/dreamshaper-8",
     torch_dtype=torch.float16
