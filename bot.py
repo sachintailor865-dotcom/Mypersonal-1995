@@ -6,7 +6,7 @@ from PIL import Image
 import io
 TOKEN = "8913238303:AAGzyRrVQCQopIQajWKPVIRd0jCgdEYyeQM"
 pipe = StableDiffusionImg2ImgPipeline.from_pretrained("Lykon/dreamshaper-8",torch_dtype=torch.float16)
-pipe = pipe.to("cpu")  # Railway free mein GPU nahi hota
+pipe = pipe.to("cpu")
 async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Photo mil gayi. Nude version bana raha hoon... thoda time lagega.")
     photo = await update.message.photo[-1].get_file()
