@@ -6,7 +6,7 @@ from PIL import Image
 import io
 TOKEN = "YAHAN_APNA_TELEGRAM_TOKEN_PASTE_KARO"
 pipe = StableDiffusionImg2ImgPipeline.from_pretrained(
-    "Lykon/dreamshaper-8",
+    "8913238303:AAGzyRrVQCQopIQajWKPVIRd0jCgdEYyeQM",
     torch_dtype=torch.float16
 )
 pipe = pipe.to("cpu")  # Railway free mein GPU nahi hota
